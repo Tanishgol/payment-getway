@@ -49,16 +49,6 @@ const Footer = () => {
                                     Contact
                                 </Link>
                             </li>
-                            <li>
-                                <Link to="#" className="hover:text-yellow-200 transition-colors">
-                                    Privacy Policy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="#" className="hover:text-yellow-200 transition-colors">
-                                    Terms of Service
-                                </Link>
-                            </li>
                         </ul>
                     </div>
                     <div>
