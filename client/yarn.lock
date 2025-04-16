@@ -1211,7 +1211,7 @@ react-dom@^19.0.0-rc.1, react-dom@>=16.8:
     react "^19.0.0-rc.1"
     react-dom "^19.0.0-rc.1"
     react-js-tailwind "file:"
-    react-router-dom "^6.21.3"
+    react-router-dom "^6.30.0"
 
 react-refresh@^0.14.0:
   version "0.14.0"
