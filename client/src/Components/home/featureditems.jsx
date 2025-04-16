@@ -60,12 +60,6 @@ const FeaturedItems = () => {
                                                 </span>
                                             ))}
                                         </div>
-                                        <button
-                                            onClick={() => addToCart(item)}
-                                            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition-colors"
-                                        >
-                                            Add to Cart
-                                        </button>
                                     </div>
                                 </div>
                             ),
