@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { CreditCardIcon, SmartphoneIcon } from 'lucide-react';
+import googlepayicon from "../../Assets/google-pay.png";
+import phonepeicon from "../../Assets/phonepe.png";
+import paytmicon from "../../Assets/paytm.png"
 
 const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
     const [paymentMethod, setPaymentMethod] = useState('card');
@@ -138,34 +141,19 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
                             type="text"
                             id="upiId"
                             placeholder="yourname@upi"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            className="w-full px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
                             required
                         />
                     </div>
                     <div className="flex flex-wrap gap-3 mb-4">
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/google-pay-india.png"
-                                alt="Google Pay"
-                                className="w-6 h-6 mr-2"
-                            />
-                            <span>Google Pay</span>
+                            <img src={googlepayicon} alt="Google Pay" className="w-10 h-10" />
                         </div>
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/phonepe.png"
-                                alt="PhonePe"
-                                className="w-6 h-6 mr-2"
-                            />
-                            <span>PhonePe</span>
+                            <img src={phonepeicon} alt="PhonePe" className="w-12 h-12" />
                         </div>
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img
-                                src="https://img.icons8.com/color/48/000000/paytm.png"
-                                alt="Paytm"
-                                className="w-6 h-6 mr-2"
-                            />
-                            <span>Paytm</span>
+                            <img src={paytmicon} alt="Paytm" className="w-10 h-10" />
                         </div>
                     </div>
                 </div>
@@ -175,11 +163,7 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
                     <label htmlFor="bank" className="block text-gray-700 mb-1">
                         Select Bank
                     </label>
-                    <select
-                        id="bank"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
-                        required
-                    >
+                    <select id="bank" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required >
                         <option value="">Select your bank</option>
                         <option value="sbi">State Bank of India</option>
                         <option value="hdfc">HDFC Bank</option>
