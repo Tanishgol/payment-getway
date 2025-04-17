@@ -28,14 +28,29 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
         },
     });
 
-    // Handle input changes
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prevData => ({
-            ...prevData,
-            [name]: value,
-        }));
+        const keys = name.split('.');
+
+        if (keys.length === 2) {
+            const [section, field] = keys;
+
+            setFormData((prevData) => ({
+                ...prevData,
+                [section]: {
+                    ...prevData[section],
+                    [field]: value,
+                },
+            }));
+        } else {
+            // For top-level fields, just in case
+            setFormData((prevData) => ({
+                ...prevData,
+                [name]: value,
+            }));
+        }
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -49,7 +64,7 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
 
         try {
             // Assuming your API endpoint for customer data is 'POST /api/customers'
-            const response = await axios.post('/api/customers', payload);
+            const response = await axios.post('http://localhost:5000/customers', payload);
             console.log('Data successfully saved:', response.data);
             onSubmit();
         } catch (error) {

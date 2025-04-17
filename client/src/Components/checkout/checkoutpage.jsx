@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import OrderSummary from './ordersummery';
-import PaymentForm from './PaymentForm';
+import PaymentForm from './paymentform';
 import { useCart } from '../cart/cartcontext';
 import axios from 'axios';
 
