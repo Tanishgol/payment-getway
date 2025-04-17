@@ -20,25 +20,6 @@
       }
     },
     {
-      "id": "b05b",
-      "customerRecords": {
-        "customerdata": {
-          "name": "Tanishgol",
-          "email": "goltanish2@gmail.com",
-          "phone": "7990928335",
-          "address": "Home",
-          "city": "Rajkot",
-          "postalCode": "360004",
-          "specialInstructions": "Leave at door"
-        },
-        "bankdata": {
-          "bankName": "",
-          "accountNumber": "",
-          "ifscCode": ""
-        }
-      }
-    },
-    {
       "id": "c29f",
       "customerRecords": {
         "customerdata": {
