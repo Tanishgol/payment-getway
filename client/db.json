@@ -1,0 +1,61 @@
+{
+  "customers": [
+    {
+      "id": "4bac",
+      "customerRecords": {
+        "customerdata": {
+          "name": "McKenzie Mcguire",
+          "email": "nyzidiz@mailinator.com",
+          "phone": "+1 (296) 953-7269",
+          "address": "Quia impedit aut qu",
+          "city": "Sit consequuntur mi",
+          "postalCode": "Magnam eligendi volu",
+          "specialInstructions": "Placeat amet amet"
+        },
+        "bankdata": {
+          "bankName": "",
+          "accountNumber": "",
+          "ifscCode": ""
+        }
+      }
+    },
+    {
+      "id": "b05b",
+      "customerRecords": {
+        "customerdata": {
+          "name": "Tanishgol",
+          "email": "goltanish2@gmail.com",
+          "phone": "7990928335",
+          "address": "Home",
+          "city": "Rajkot",
+          "postalCode": "360004",
+          "specialInstructions": "Leave at door"
+        },
+        "bankdata": {
+          "bankName": "",
+          "accountNumber": "",
+          "ifscCode": ""
+        }
+      }
+    },
+    {
+      "id": "c29f",
+      "customerRecords": {
+        "customerdata": {
+          "name": "Levi Holmes",
+          "email": "niqojo@mailinator.com",
+          "phone": "+1 (942) 188-8847",
+          "address": "Incididunt qui delen",
+          "city": "Eligendi saepe in ex",
+          "postalCode": "Dolor impedit maior",
+          "specialInstructions": "Dolor explicabo Ill"
+        },
+        "bankdata": {
+          "bankName": "",
+          "accountNumber": "",
+          "ifscCode": ""
+        }
+      }
+    }
+  ]
+}

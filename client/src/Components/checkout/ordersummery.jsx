@@ -31,24 +31,15 @@ const OrderSummary = () => {
                         </div>
                         <div className="flex items-center justify-between">
                             <div className="flex items-center">
-                                <button
-                                    onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                    className="p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-                                >
+                                <button onClick={() => updateQuantity(item.id, item.quantity - 1)} className="p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                                     <MinusIcon size={14} />
                                 </button>
                                 <span className="mx-2">{item.quantity}</span>
-                                <button
-                                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                    className="p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-                                >
+                                <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                                     <PlusIcon size={14} />
                                 </button>
                             </div>
-                            <button
-                                onClick={() => removeFromCart(item.id)}
-                                className="text-red-500 hover:text-red-700 transition-colors"
-                            >
+                            <button onClick={() => removeFromCart(item.id)} className="text-red-500 hover:text-red-700 transition-colors">
                                 <TrashIcon size={16} />
                             </button>
                         </div>
@@ -58,19 +49,19 @@ const OrderSummary = () => {
             <div className="border-t border-gray-200 pt-4 mt-4 space-y-2">
                 <div className="flex justify-between text-gray-600">
                     <span>Subtotal</span>
-                    <span>${subtotal.toFixed(2)}</span>
+                    <span>₹{subtotal.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                     <span>Tax (8%)</span>
-                    <span>${tax.toFixed(2)}</span>
+                    <span>₹{tax.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                     <span>Delivery Fee</span>
-                    <span>${deliveryFee.toFixed(2)}</span>
+                    <span>₹{deliveryFee.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between font-bold text-lg pt-2 border-t border-gray-200">
                     <span>Total</span>
-                    <span>${total.toFixed(2)}</span>
+                    <span>₹{total.toFixed(2)}</span>
                 </div>
             </div>
         </div>
