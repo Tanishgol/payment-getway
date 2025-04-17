@@ -17,7 +17,7 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
             postalCode: '',
             specialInstructions: '',
         },
-        
+
         paymentDetails: {
             cardNumber: '',
             expiryDate: '',
@@ -121,13 +121,13 @@ const PaymentForm = ({ onSubmit, isProcessing, amount }) => {
                     </div>
                     <div className="flex flex-wrap gap-3 mb-4">
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img src={googlepayicon} alt="Google Pay" className="w-10 h-10" />
+                            <img loading='lazy' src={googlepayicon} alt="Google Pay" className="w-10 h-10" />
                         </div>
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img src={phonepeicon} alt="PhonePe" className="w-12 h-12" />
+                            <img loading='lazy' src={phonepeicon} alt="PhonePe" className="w-12 h-12" />
                         </div>
                         <div className="flex items-center border border-gray-300 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-50">
-                            <img src={paytmicon} alt="Paytm" className="w-10 h-10" />
+                            <img loading='lazy' src={paytmicon} alt="Paytm" className="w-10 h-10" />
                         </div>
                     </div>
                 </div>
